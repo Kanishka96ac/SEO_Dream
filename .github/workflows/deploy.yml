@@ -1,4 +1,4 @@
-name: Deploy SEO Dream Project to GitHub Pages
+name: Deploy Angular Project to GitHub Pages
 
 on:
   push:
@@ -28,4 +28,4 @@ jobs:
       env:
         CI: true
       run: |
-        npx angular-cli-ghpages --dir=dist/aws-s3-project
+        npx angular-cli-ghpages --dir=dist/aws-s3-project --no-silent
