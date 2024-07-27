@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AwsS3Project</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+   <!-- Owl Carousel CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   <!-- Animate CSS for Wow.js -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    .portfolio-item .thumb {
+      position: relative;
+    }
+    .portfolio-item .hover-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .portfolio-item .hover-content .inner-content {
+      color: #fff;
+      text-align: center;
+    }
+    .portfolio-item .hover-content:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Wow JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".loop").owlCarousel({
+          items: 2, // Number of items you want to show
+          loop: true,
+          margin: 30,
+          nav: true,
+          dots: true,
+          responsive:{
+            0:{
+              items:1
+            },
+            600:{
+              items:2
+            },
+            1000:{
+              items:3
+            }
+          }
+        });
+  
+        new WOW().init();
+      });
+    </script>
+  </body>
+  </html>
+  
+</body>
+</html>
